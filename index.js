@@ -244,7 +244,7 @@ async function warmUrls(urls, country, logger, batchSize = 1, delay = 2000) {
 
           // Kumpulkan log (TIDAK dikirim sekarang; dikirim sekali di akhir run)
           logger.log({
-            country,
+            country: cfEdge,
             url,
             status: res.status,
             cfCache,
